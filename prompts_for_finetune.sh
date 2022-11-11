@@ -1,12 +1,12 @@
 CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 prompts.py \
-    --data_dir ../data/debias/ \
+    --data_dir ./data/debias/ \
     --debias_type gender \
     --max_prompt_length 5 \
     --num_p 100 \
     --model_name_or_path bert-base-uncased \
-    --output_dir ../data/debias/ \
+    --output_dir ./data/debias/ \
     --run_name run04 \
-    --prompt_dir ../data/debias/prompts_bert-base-uncased_gender.txt \
+    --prompt_dir ./data/debias/prompts_bert-base-uncased_gender.txt \
     --local_rank 0 \
     --per_device_batch_size 1024 \
     --distributed \
