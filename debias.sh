@@ -5,10 +5,9 @@ python debias.py \
     --model_name_or_path bert-base-uncased \
     --output_dir ./out/ \
     --run_name run00 \
-    --prompt_dir ./data/debias/wikipedia-2.5.txt \
-    --num_gpus 2 \
+    --prompt_dir ./data/prompts_bert-base-uncased_gender.txt \
+    --num_gpus 1 \
     --per_device_batch_size 16 \
-    --distributed \
     --dataloader_num_workers 1 \
     --learning_rate 1e-5 \
     --num_train_epochs 5
