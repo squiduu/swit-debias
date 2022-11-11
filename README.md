@@ -27,3 +27,4 @@ Fine-tune a pre-trained BERT to debias.
 ```
 sh debias.sh
 ```
+Then you will get two checkpoint files at `./out/glue_bert-base-uncased_run00_gender/` and `./out/seat_bert-base-uncased_run00_gender/`
