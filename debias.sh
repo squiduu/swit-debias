@@ -1,11 +1,11 @@
 python debias.py \
-    --data_dir ../data/debias/ \
+    --data_dir ./data/debias/ \
     --debias_type gender \
     --divergence_dim 1 \
     --model_name_or_path bert-base-uncased \
     --output_dir ./out/ \
     --run_name run05 \
-    --prompt_dir ../data/debias/wikipedia-2.5.txt \
+    --prompt_dir ./data/debias/wikipedia-2.5.txt \
     --num_gpus 2 \
     --per_device_batch_size 16 \
     --distributed \
