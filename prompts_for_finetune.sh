@@ -5,7 +5,7 @@ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 p
     --num_p 100 \
     --model_name_or_path bert-base-uncased \
     --output_dir ./data/debias/ \
-    --run_name run04 \
+    --run_name run00 \
     --prompt_dir ./data/prompts_bert-base-uncased_gender.txt \
     --local_rank 0 \
     --per_device_batch_size 1024 \
