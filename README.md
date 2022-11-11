@@ -20,7 +20,7 @@ Search biased prompts with pre-defined sets of words.
 mkdir ./out/
 sh prompts_for_finetune.sh
 ```
-Then you will get a prompt file at `./data/debias/prompts_bert-base-uncased_gender.txt`
+Then you will get a prompt file at `./data/prompts_bert-base-uncased_gender.txt`
 
 ### Debiaing
 Fine-tune a pre-trained BERT to debias.
