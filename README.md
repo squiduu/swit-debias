@@ -1,5 +1,5 @@
 # swit-debias
-Switching [MASK] Tokens for Gender Debiasing in Pre-trained Language Models
+Scripts of "Switching [MASK] Tokens for Gender Debiasing in Pre-trained Language Models."
 
 ## Installation
 This repository is available in Ubuntu 20.04 LTS, and it is not tested in other OS.
@@ -14,8 +14,16 @@ pip install -r requirements.txt
 ```
 
 ## Bias mitigation
-Fine-tune a pre-trained BERT to debias
+### Biased prompt searching
+Search biased prompts with pre-defined sets of words.
 ```
 mkdir ./out/
-sh 
+sh prompts_for_finetune.sh
+```
+Then you will get a prompt file at `./data/debias/prompts_bert-base-uncased_gender.txt`
+
+### Debiaing
+Fine-tune a pre-trained BERT to debias.
+```
+sh debias.sh
 ```
